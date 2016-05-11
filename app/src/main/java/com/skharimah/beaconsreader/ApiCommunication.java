@@ -63,6 +63,7 @@ public class ApiCommunication extends AppCompatActivity {
         beaconUUID = beaconUUID.replaceAll("-", "");
 
         BeaconInfo newexample = new BeaconInfo("user1@test.com",beaconUUID, Integer.parseInt(beaconMajor), Integer.parseInt(beaconMinor));
+        //BeaconInfo newexample = new BeaconInfo("user1@test.com","4152554efaab4a3b86d0947070693a77", 1, 1);
         example = newexample;
         Gson gson = new Gson();
         toprint2 = gson.toJson(example);
